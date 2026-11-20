@@ -1,0 +1,411 @@
+
+/* general page design */
+
+body {
+    font-family: "Jost", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    background-color: #570000;
+    color: #FFF585;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.header {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    font-family: "Great Vibes", "Brush Script MT", cursive;
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.tagline {
+    font-family: "Jost", Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    margin-top: 0;
+    line-height: 1;
+}
+
+
+/* headings */
+
+h2 {
+    font-family: "Great Vibes", "Brush Script MT", cursive;
+    font-size: 2rem;
+    text-align: center;
+    color: #FFF585;
+}
+
+/*decorative heading */
+
+.about-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    text-align: center;
+}
+
+.about-heading h2 {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.about-heading span {
+    font-size: 2rem;
+    color: #FFF585;
+}
+
+h3 {
+    font-family: "Jost", Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+/*dividers*/
+
+hr {
+    border: none;
+    border-top: 1px solid #FFF585;
+    margin: 1rem 2rem;
+}
+
+
+/* simple lace-inspired dividers */
+
+.lace-divider {
+    height: 16px;
+    border: none;
+    margin: 1.5rem 2rem;
+
+    background:
+        radial-gradient(circle at 8px 0, #D8BD78 7px, transparent 7.5px);
+
+    background-size: 16px 16px;
+    background-repeat: repeat-x;
+}
+
+
+.about-section {
+    padding: 2rem;
+    margin: 2rem;
+}
+
+
+/* flexbox */
+
+.about-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    background-color: #FFF585;
+    color: #570000;
+
+    padding: 2rem;
+    margin-top: 1rem;
+
+    border: 2px solid #FFF585;
+    border-radius: 12px;
+}
+
+
+/*biography*/
+
+.bio {
+    flex: 1;
+}
+
+
+/* pfp-right side */
+
+.profile-photo {
+    flex-shrink: 0;
+}
+
+.profile-photo img {
+    display: block;
+    width: 220px;
+    height: 260px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    border: 3px solid #570000;
+}
+
+
+/* list of things i love*/
+
+.love-section {
+    background-color: #FFF585;
+    color: #570000;
+
+    padding: 2rem;
+    margin: 2rem;
+
+    border: 2px solid #FFF585;
+    border-radius: 15px;
+
+    position: relative;
+}
+
+
+/* center things i love title and list */
+
+.love-section h2 {
+    color: #570000;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.love-section ul {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    list-style-position: inside;
+    list-style-type: disc;
+}
+
+.love-section li {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+
+/* ornamental corners for things i love */
+
+.love-section.ornamental-border::before,
+.love-section.ornamental-border::after {
+    content: "❧";
+    position: absolute;
+    color: #570000;
+    font-size: 2rem;
+    line-height: 1;
+    z-index: 2;
+}
+
+/* top left */
+
+.love-section.ornamental-border::before {
+    top: 8px;
+    left: 12px;
+}
+
+/* bottom right */
+
+.love-section.ornamental-border::after {
+    bottom: 8px;
+    right: 12px;
+}
+
+/* top right and bottom left */
+
+.lace-top-right,
+.lace-bottom-left {
+    position: absolute;
+    color: #570000;
+    font-size: 2rem;
+    line-height: 1;
+    z-index: 2;
+}
+
+.lace-top-right {
+    top: 8px;
+    right: 12px;
+}
+
+.lace-bottom-left {
+    bottom: 8px;
+    left: 12px;
+}
+
+
+/*image gallery*/
+
+.love-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    background-color: #570000;
+    padding: 2rem;
+    margin-top: 1.5rem;
+
+    border-radius: 13px;
+    border: 3px solid #FFF585;
+}
+
+/*individual images*/
+
+.love-item {
+    flex: 0 0 150px;
+    text-align: center;
+}
+
+/*image appearance*/
+
+.love-item img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #FFF585;
+}
+
+/*image captions */
+
+.love-item p {
+    color: #FFF585;
+    font-family: "Jost", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+/*my passion project*/
+
+.passion-section {
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.center-title {
+    text-align: center;
+}
+
+.canva-embed {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+    border-radius: 8px;
+
+    border: 2px solid #FFF585;
+}
+
+.canva-embed iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+}
+
+.project-link {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+/* contact*/
+
+.contact-section {
+    padding: 1rem;
+    text-align: center;
+}
+
+.contact-text {
+    margin-top: 0;
+    line-height: 1;
+}
+
+
+/*links*/
+
+a {
+    color: #FFF585;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+
+/* footer */
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 1rem;
+    margin-top: -4rem;
+}
+
+
+/*mobile responsiveness*/
+
+@media (max-width: 600px) {
+
+    .about-layout {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    /* profile photo */
+
+    .profile-photo img {
+        width: 180px;
+        height: 200px;
+    }
+
+    /* section spacing */
+
+    .about-section,
+    .love-section,
+    .passion-section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    /* heading sizes */
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .about-heading {
+        gap: 0.5rem;
+    }
+
+    .about-heading span {
+        font-size: 1rem;
+    }
+
+    /* things i love - mobile gallery */
+
+    .love-gallery {
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .love-item {
+        flex: 0 0 120px;
+    }
+
+    .love-item img {
+        width: 120px;
+        height: 120px;
+    }
+
+}
