@@ -287,8 +287,36 @@ hr {
     margin: 2rem;
 }
 
+.passion-box {
+    background-image: linear-gradient(rgba(30, 0, 0, 0.55), rgba(30, 0, 0, 0.55)), url("./bgpassion.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #570000;
+    color: #FFF585;
+
+    padding: 2rem;
+    border: 2px solid #FFF585;
+    border-radius: 15px;
+}
+
 .center-title {
     text-align: center;
+    margin-top: 0;
+}
+
+.project-block {
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto 2rem auto;
+}
+
+.project-block:last-child {
+    margin-bottom: 0;
+}
+
+.project-subtitle {
+    margin-bottom: 0.75rem;
 }
 
 .canva-embed {
@@ -302,31 +330,38 @@ hr {
     border: 2px solid #FFF585;
 }
 
-.canva-embed iframe {
+.canva-embed iframe,
+.canva-embed img {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     border: none;
+    object-fit: cover;
 }
 
 .project-link {
     text-align: center;
     font-size: 0.9rem;
+    margin-top: 0.6rem;
 }
 
 
 /* contact*/
 
 .contact-section {
-    padding: 1rem;
+    padding: 1.5rem 1rem 2rem 1rem;
     text-align: center;
 }
 
+.contact-section h2 {
+    margin: 0 0 0.25rem 0;
+}
+
 .contact-text {
-    margin-top: 0;
-    line-height: 1;
+    margin: 0;
+    line-height: 1.2;
 }
 
 
@@ -347,7 +382,7 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     padding: 1rem;
-    margin-top: -4rem;
+    margin-top: 1rem;
     background-image: url("./headerfooter.jpg");
     background-size: cover;
     background-position: center;
@@ -379,6 +414,10 @@ footer {
     .passion-section {
         margin: 1rem;
         padding: 1rem;
+    }
+
+    .passion-box {
+        padding: 1.25rem;
     }
 
     /* heading sizes */
