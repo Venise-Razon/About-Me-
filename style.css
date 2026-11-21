@@ -352,6 +352,18 @@ hr {
 
 .contact-section {
     padding: 1.5rem 1rem 2rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-info {
     text-align: center;
 }
 
@@ -362,6 +374,12 @@ hr {
 .contact-text {
     margin: 0;
     line-height: 1.2;
+}
+
+.mail-icon {
+    width: 65px;
+    height: auto;
+    display: block;
 }
 
 
@@ -456,6 +474,10 @@ footer {
     .love-item img {
         width: 120px;
         height: 120px;
+    }
+
+    .mail-icon {
+        width: 50px;
     }
 
 }
